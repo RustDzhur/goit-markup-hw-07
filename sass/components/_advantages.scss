@@ -1,0 +1,38 @@
+@use "../utils/vars";
+.advantages {
+    &__list {
+        display: flex;
+        }
+    &__item {
+        width: 270px;
+        margin-right: 30px;
+        &:last-child {
+        margin-right: 0;
+        }
+    }
+    &__svg {
+        background-color: #F5F4FA;
+        height: 120px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        @include displayflex();
+    }
+    &__svg-icon {
+        width: 70px;
+        height: 70px;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: map-get($font-weight, Bold);
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $primaryColor;
+        margin-bottom: 10px;
+    }
+    &__content {
+        letter-spacing: 0.03em;
+        color: $secondaryColor;
+        font-size: 14px;
+    }
+}

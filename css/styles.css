@@ -96,9 +96,6 @@ img {
   }
 
 /*----------Стили для логотипа. Шапка/Подвал сайта----------*/
-.header {
-    border-bottom: 1px solid #ECECEC;
-}
 
 .header-nav__logo {
     font-family: 'Raleway', sans-serif;
@@ -125,6 +122,9 @@ img {
 
 /*----------Оформление ссылок. Шапка/Подвал сайта----------*/
 /*HEADER*/
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -173,11 +173,11 @@ img {
     
 }
 
+/*ДОП класс для отметки активной страницы*/
 .active-page1 {
     color: var(--header-nav__link-hover-focus-color);
 
 }
-/*ДОП класс для отметки активной страницы*/
 .active-page1::after{
     content: "";
     width: 100%;
