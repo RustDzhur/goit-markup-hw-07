@@ -1,23 +1,21 @@
 @use "../utils/vars";
-.header-nav__logo {
+.logo {
     font-family: 'Raleway', sans-serif;
     font-weight: map-get($font-weight, Bold);
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: #000000;
+}
+.logo-header {
     margin-right: 93px;
 }
-.footer__content-logo-link {
-    font-family: 'Raleway', sans-serif;
-    font-weight: map-get($font-weight, Bold);
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #000000;
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
+    color: #ffffff;
 }
 
-.header-nav__logo-decor,
-.footer__content-logo-decor {
+.logo__decor {
     color: $decorColor;
 }
