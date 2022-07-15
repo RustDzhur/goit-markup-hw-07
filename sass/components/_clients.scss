@@ -4,9 +4,9 @@
     @include displayflex();
     &__item {
         margin-right: 30px;
-        &:last-child {
-            margin-right: 0;
-        }
+    }
+    &__item:last-child {
+        margin-right: 0;
     }
     &__link {
         width: 170px;

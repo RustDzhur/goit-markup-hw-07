@@ -18,9 +18,9 @@
     &__item {
         margin-right: 50px;
         position: relative;
-        &:last-child {
-            margin-right: 0;
-        }
+    }
+    &__item:last-child {
+        margin-right: 0;
     }
     &__link {
         font-weight: map-get($font-weight, Medium);
