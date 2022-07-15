@@ -1,13 +1,5 @@
 $font-weight: (Regular: 400, Medium: 500, Bold: 700, Blacks: 900);
 
-
-@mixin displayflex() {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-
-
 $primaryColor: #212121;
 $secondaryColor: #757575;
 $decorColor: #2196F3;

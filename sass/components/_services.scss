@@ -1,21 +1,11 @@
 @use "../utils/vars";
-.services {
+@use "../utils/mixin";
+.section--no-padding-top{
     padding-top: 0;
     z-index: 0;
 }
-.title-services {
-    font-weight: map-get($font-weight, Bold);
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $primaryColor;
-    margin-bottom: 50px;
-}
 .services {
-    &__list {
     display: flex;
-    }
     &__item {
         margin-right: 30px;
         position: relative;
@@ -30,9 +20,7 @@
         bottom: 0;
         width: 100%;
         height: 70px;
-    
         background: rgba(47, 48, 58, 0.8);
-    
         font-weight: map-get($font-weight, Bold);
         font-size: 14px;
         line-height: 16px;

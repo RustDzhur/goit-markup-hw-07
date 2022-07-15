@@ -5,16 +5,14 @@ body {
     color: $secondaryColor;
     margin: 0;
 }
-.container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.section__title {
+    font-weight: map-get($font-weight, Bold);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primaryColor;
+    margin-bottom: 50px;
 }
 a {
     text-decoration: none;

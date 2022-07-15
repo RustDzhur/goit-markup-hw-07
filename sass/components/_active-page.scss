@@ -1,4 +1,5 @@
 @use "../utils/vars";
+@use "../utils/mixin";
 .list-nav__link--active-page {
     color: $decorColor;
     &::after{

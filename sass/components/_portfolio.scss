@@ -1,20 +1,51 @@
 @use "../utils/vars";
+@use "../utils/mixin";
 .cards {
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background: #ffffff;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #ffffff;
     &__item {
         margin-right: 30px;
         margin-bottom: 30px;
     }
-    &__item-img-discr {
+    &__item:nth-child(3n + 3) {
+        margin-right: 0;
+    }
+    &__item:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+    &__title {
+        font-weight: map-get($font-weight, Bold);
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $primaryColor;
+        margin-bottom: 4px;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        color: $secondaryColor;
+    }
+    &__box--hover {
         position: relative;
         overflow: hidden;
     }
-    &__item-discr {
+    &__link {
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover,
+    &__link:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        display: block;
+    }
+    &__link:hover .cards__discr,
+    &__link:focus .cards__discr {
+        transform: translateY(0);
+    }
+    &__discr {
         position: absolute;
         
         display: block;
@@ -36,45 +67,13 @@
         transform: translateY(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__item:nth-child(3n + 3) {
-        margin-right: 0;
+    &__box {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+        border-left: 1px solid #eeeeee;
+        border-right: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
     }
-    &__item:nth-last-child(-n + 3) {
-        margin-bottom: 0;
-    }
-    &__item-title {
-        font-weight: map-get($font-weight, Bold);
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color: $primaryColor;
-        margin-bottom: 4px;
-    }
-    &__item-type {
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.03em;
-        color: $secondaryColor;
-    }
-}
-.card-link {
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-        display: block;
-    }
-    &:hover .cards__item-discr,
-    &:focus .cards__item-discr {
-        transform: translateY(0);
-    }
-}
-.card__item-content {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
 }
