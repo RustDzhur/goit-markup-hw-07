@@ -11,13 +11,12 @@
     &__item {
         margin-right: 30px;
         position: relative;
-    }
-    &__item:last-child {
-        margin-right: 0;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     &__disr {
         @include displayflex ();
-        
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -28,7 +27,6 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-    
         color: #ffffff;
     }
 }

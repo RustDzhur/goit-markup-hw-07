@@ -10,12 +10,12 @@
     &__item {
         margin-right: 30px;
         margin-bottom: 30px;
-    }
-    &__item:nth-child(3n + 3) {
-        margin-right: 0;
-    }
-    &__item:nth-last-child(-n + 3) {
-        margin-bottom: 0;
+        &:nth-child(3n + 3) {
+            margin-right: 0;
+        }
+        &:nth-last-child(-n + 3) {
+            margin-bottom: 0;
+        }
     }
     &__title {
         font-weight: map-get($font-weight, Bold);
@@ -37,11 +37,11 @@
     }
     &__link {
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__link:hover,
-    &__link:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-        display: block;
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            display: block;
+        }
     }
     &__discr {
         position: absolute;
@@ -64,11 +64,12 @@
         padding-right: 24px;
         transform: translateY(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        .cards__link:hover &,
+        .cards__link:focus & {
+            transform: translateY(0);
+        }
     }
-    &__link:hover &__discr,
-    &__link:focus &__discr {
-        transform: translateY(0);
-    }
+
     &__box {
         padding-top: 20px;
         padding-bottom: 20px;
