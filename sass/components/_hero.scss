@@ -1,5 +1,7 @@
 @use "../utils/vars";
 @use "../utils/mixin";
+@import "../utils/vars";
+@import "../utils/mixin";
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;

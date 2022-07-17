@@ -1,5 +1,7 @@
 @use "../utils/vars";
 @use "../utils/mixin";
+@import "../utils/vars";
+@import "../utils/mixin";
 .section--other-bg {
     background-color: $filterBgColor;
 }

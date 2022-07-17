@@ -1,5 +1,7 @@
 @use "../utils/vars";
 @use "../utils/mixin";
+@import "../utils/vars";
+@import "../utils/mixin";
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: map-get($font-weight, Bold);

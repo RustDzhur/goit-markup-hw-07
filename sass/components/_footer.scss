@@ -1,5 +1,7 @@
 @use "../utils/vars";
 @use "../utils/mixin";
+@import "../utils/vars";
+@import "../utils/mixin";
 .footer {
     background-color: #2F303A;
     padding-top: 60px;

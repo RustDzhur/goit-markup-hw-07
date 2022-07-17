@@ -1,5 +1,7 @@
 @use "../utils/vars";
 @use "../utils/mixin";
+@import "../utils/vars";
+@import "../utils/mixin";
 .clients {
     @include displayflex();
     &__item {
