@@ -2,3 +2,12 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.section__title {
+    font-weight: map-get($font-weight, Bold);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primaryColor;
+    margin-bottom: 50px;
+}
